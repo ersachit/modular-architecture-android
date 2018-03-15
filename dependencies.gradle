@@ -1,0 +1,39 @@
+ext {
+    // Application
+    applicationId = "com.ks.amm"
+    appVersionName = "1.0.0"
+    appVersionCode = 1
+
+    // Android
+    androidBuildToolVersion = "27.0.1"
+    androidMinSdkVersion = 16
+    androidTargetSdkVersion = 26
+    androidCompileSdkVersion = 26
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+
+    // Libraries version
+    supportLibraryVersion = '26.0.2'
+    constraintLayoutVersion = '1.0.2'
+    javaxAnnotationVersion = '1.0'
+    kotlinVersion = '1.1.51'
+    junitVersion = '4.12'
+    dataBindingCompilerVersion =   '3.0.1'
+
+
+    libraries = [
+            common          : project(':common'),
+            dashboard       : project(':dashboard'),
+            auth            : project(':auth'),
+            resources       : project(':resources'),
+
+            supportAppCompat: "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            supportDesign   : "com.android.support:design:${supportLibraryVersion}",
+            supportCardView : "com.android.support:cardview-v7:${supportLibraryVersion}",
+            constraintLayout: "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+            kotlin          : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${kotlinVersion}",
+            javaxAnnotation : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            gson            : "com.google.code.gson:gson:2.8.0",
+            junit           : "junit:junit:${junitVersion}",
+            dataBindingCompiler :   "com.android.databinding:compiler:${dataBindingCompilerVersion}"
+    ]
+}

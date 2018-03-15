@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ks.amm.auth">
+
+    <application>
+        <activity
+            android:name="com.ks.amm.auth.login.LoginActivity"
+            android:theme="@style/AuthTheme" />
+
+        <activity
+            android:name="com.ks.amm.auth.register.RegisterActivity"
+            android:theme="@style/AuthTheme" />
+    </application>
+
+</manifest>

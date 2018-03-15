@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ks.amm.product">
+
+    <application>
+        <activity
+            android:name="com.ks.amm.product.catalog.ProductCatalogActivity"
+            android:theme="@style/ProductTheme" />
+        <activity
+            android:name="com.ks.amm.product.details.ProductDetailsActivity"
+            android:theme="@style/ProductTheme"
+            android:parentActivityName="com.ks.amm.product.catalog.ProductCatalogActivity"/>
+    </application>
+
+</manifest>

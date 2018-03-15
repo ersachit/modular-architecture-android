@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    def globalConfig = rootProject.ext
+
+    compileSdkVersion globalConfig.androidCompileSdkVersion
+    buildToolsVersion globalConfig.androidBuildToolVersion
+
+    defaultConfig {
+        minSdkVersion globalConfig.androidMinSdkVersion
+        targetSdkVersion globalConfig.androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+
+    def libs = rootProject.ext.libraries
+    testImplementation libs.junit
+    implementation libs.supportAppCompat
+    implementation libs.gson
+    implementation libs.common
+    implementation libs.constraintLayout
+    implementation libs.supportDesign
+    implementation libs.supportCardView
+    implementation libs.kotlin
+
+}

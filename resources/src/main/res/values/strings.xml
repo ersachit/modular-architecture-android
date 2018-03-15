@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Resources</string>
+  <string name="hint_username">Username</string>
+  <string name="hint_password">Password</string>
+  <string name="hint_email">Email Address</string>
+  <string name="hint_d_name">Display Name</string>
+  <string name="hint_c_password">Confirm Password</string>
+  <string name="sign_in">Sign In</string>
+</resources>
